@@ -14,7 +14,6 @@ var rcsdk = new RC({
 });
 
 var platform = rcsdk.platform();
-
 platform.login({
     'username':  process.env.RC_USERNAME,
     'password':  process.env.RC_PASSWORD,
@@ -31,8 +30,8 @@ async function read_extension_phone_number(){
         var jsonObj = await resp.json()
         for (var record of jsonObj.records){
             for (feature of record.features){
-                if (feature == "SmsSender"){
-                    return send_sms(record.phoneNumber)
+                if (feature == "MmsSender"){
+                    return send_mms(record.phoneNumber)
                 }
             }
         }
@@ -42,17 +41,25 @@ async function read_extension_phone_number(){
     }
 }
 
-async function send_sms(fromNumber){
+async function send_mms(fromNumber){
+    var FormData = require('form-data');
+    fd = new FormData();
+    var body = {
+        from: {'phoneNumber': fromNumber},
+        to: [{'phoneNumber': RECIPIENT}],
+        text: 'Hello World!'
+    }
+    fd.append('json', new Buffer.from(JSON.stringify(body)), {
+        contentType: 'application/json'
+    });
+    fd.append('attachment', require('fs').createReadStream('TestImage.jpg'));
     try {
-        var resp = await platform.post('/restapi/v1.0/account/~/extension/~/sms', {
-            from: {'phoneNumber': fromNumber},
-            to: [{'phoneNumber': RECIPIENT}],
-            text: 'Hello World!'
-        })
-        var jsonObj = await resp.json()
-        console.log("SMS sent. Message status: " + jsonObj.messageStatus)
-    } catch(e) {
+    var resp = await platform.post('/restapi/v1.0/account/~/extension/~/mms', fd)
+    var jsonObj = await resp.json()
+        console.log("MMS sent. Message status: " + jsonObj.messageStatus)
+        console.log('Message Id: ' + jsonObj.id)
+    }
+    catch (e){
         console.log(e.message)
-        process.exit(1)
     }
 }

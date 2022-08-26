@@ -85,20 +85,23 @@ nav:
       - 'Call Recording Push Notification': 'https://ringcentral-tutorials.github.io/callrecording-notification-node/'
   - 'SMS and Fax':
     - 'Overview': 'messaging/index.md'
-    - 'Getting Started': 'messaging/quick-start.md'
+    - 'Getting Started': 'messaging/getting-started.md'
+    - 'Best Practices': 'messaging/best-practices.md'
+    - 'Valid SMS Numbers': 'messaging/valid-sms-numbers.md'
+    - 'Toll-Free vs. Local Numbers': 'messaging/toll-free-sms-vs-local-numbers.md'
+
     - 'Enhanced Business SMS':
-      - 'Best Practices': 'messaging/sms/best-practices.md'
-      - 'Sending an SMS': 'messaging/sms/sending-sms.md'
-      - 'Sending an MMS': 'messaging/sms/sending-images.md'
-      - 'Valid SMS Numbers': 'messaging/sms/valid-sms-numbers.md'
-      - 'Postman': 'messaging/sms/postman.md'
+      - 'Overview': 'messaging/sms/standard-sms/index.md'
+      - 'Valid SMS Numbers': 'messaging/sms/standard-sms/valid-sms-numbers.md'
+      - 'Sending an SMS': 'messaging/sms/standard-sms/sending-sms.md'
+      - 'Sending an MMS': 'messaging/sms/standard-sms/sending-mms.md'
+      - 'Postman': 'messaging/sms/standard-sms/postman.md'
     - 'High Volume SMS':
       - 'Overview': 'messaging/sms/high-volume/index.md'
-      - 'Best Practices': 'messaging/sms/high-volume/best-practices.md'
+      - 'Valid SMS Numbers': 'messaging/sms/high-volume/valid-sms-numbers.md'
       - 'Sending High Volume SMS': 'messaging/sms/high-volume/sending-highvolume-sms.md'
-      - 'Reading High Volume Message Store': 'messaging/sms/high-volume/message-store.md'
-      - 'Toll-Free vs. Local Numbers': 'messaging/sms/high-volume/toll-free-sms-vs-local-numbers.md'
       - 'Opt-in / Opt-out': 'messaging/sms/high-volume/opt-out.md'
+      - 'Reading High Volume Message Store': 'messaging/sms/high-volume/message-store.md'
       - 'Event Notifications': 'messaging/sms/high-volume/events.md'
       - 'Errors Handling': 'messaging/sms/high-volume/handling-errors.md'
     - 'Fax':
@@ -191,7 +194,7 @@ nav:
     - 'Overview': 'analytics/index.md'
     - 'Getting Started': 'analytics/quick-start.md'
     - 'Aggregate Performance Data': 'analytics/aggregate.md'
-    - 'Timeline Data': 'analytics/timeline.md'
+    - 'Timeline Timeline Data': 'analytics/timeline.md'
     - 'Javascript sample app': https://github.com/ringcentral/call-performance-analytics-demo-node
     - 'Java sample app': https://github.com/ringcentral/call-performance-analytics-demo-java
 
@@ -218,10 +221,9 @@ nav:
       - 'Callaborating with developers': 'basics/inviting-developers.md'
       - 'Running code samples': 'basics/code-samples.md'
       - 'Media content': 'basics/media.md'
-      - 'App scopes/permissions': 'basics/permissions.md'
+      - 'App permissions': 'basics/permissions.md'
       - 'URI schemes': 'basics/uri-schemes.md'
       - 'Rate limits': 'basics/rate-limits.md'
-      - 'Errors': 'basics/errors.md'
       - 'API Change Log':
         - 'Preface': 'basics/changelog/index.md'
         - 'v.1.0.51 (Apr 2022)': 'basics/changelog/1_0_51.md'
@@ -265,7 +267,6 @@ nav:
       - 'Getting started': 'authentication/jwt/quick-start.md'
       - 'Creating a JWT credential': 'authentication/jwt/create-jwt.md'
       - 'Configuring an app for JWT': 'authentication/jwt/config-app.md'
-      - 'Using JWT for public apps': 'authentication/jwt/jwt-for-public-apps.md'
       - 'Troubleshooting': 'authentication/jwt/troubleshooting.md'
     - 'Auth code grant type':
       - 'Getting Started': 'authentication/quick-start.md'
@@ -288,10 +289,9 @@ nav:
       - 'Creating Webhooks': 'notifications/webhooks/creating-webhooks.md'
       - 'Receiving Webhooks': 'notifications/webhooks/receiving.md'
       - 'Configuring TLS/SSL': 'notifications/webhooks/configuring-tls-ssl.md'
-      - 'Troubleshooting': 'notifications/webhooks/troubleshooting.md'
     - 'Sample Applications':
       - 'Create SMS Push Notification': 'https://ringcentral-tutorials.github.io/sms-api-nodejs-quickstart/'
       - 'A2P SMS Messaging': 'https://ringcentral-tutorials.github.io/a2p-sms-messaging-nodejs-demo/'
 
   - 'Downloads and SDKs': sdks.md
-  - 'RingCentral Labs': 'https://www.ringcentral.com/apps/p/ringcentral-labs'
+  - 'RingCentral Labs': labs.md

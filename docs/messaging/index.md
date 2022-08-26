@@ -6,12 +6,12 @@
   <h3 class="h3 display-5">Getting started with SMS and Fax messaging</h3>
   <p class="lead">Within the RingCentral Platform, Messaging encompasses a number of elements that work together to enable developers to send and receive SMS, fax, voicemail and pager messages through the network. In addition, all messages sent and received over the network are captured within the RingCentral Message Store which allows developers to download messages, access message histories, and manage user inboxes.</p>
   <p>We invite all developers to try out our SMS and Fax API by writing a simple app to send an SMS message in almost no time at all. Get started using a Quick Start in any of the following languages:</p>
-  <a href="quick-start/#Javascript" class="btn btn-light qs-link">Javascript &raquo;</a>
-  <a href="quick-start/#PHP" class="btn btn-light qs-link">PHP &raquo;</a>
-  <a href="quick-start/#Python" class="btn btn-light qs-link">Python &raquo;</a>
-  <a href="quick-start/#Ruby" class="btn btn-light qs-link">Ruby &raquo;</a>
-  <a href="quick-start/#Java" class="btn btn-light qs-link">Java &raquo;</a>
-  <a href="quick-start/#C#" class="btn btn-light qs-link">C# &raquo;</a>
+  <a href="getting-started/#Javascript" class="btn btn-light qs-link">Javascript &raquo;</a>
+  <a href="getting-started/#PHP" class="btn btn-light qs-link">PHP &raquo;</a>
+  <a href="getting-started/#Python" class="btn btn-light qs-link">Python &raquo;</a>
+  <a href="getting-started/#Ruby" class="btn btn-light qs-link">Ruby &raquo;</a>
+  <a href="getting-started/#Java" class="btn btn-light qs-link">Java &raquo;</a>
+  <a href="getting-started/#C#" class="btn btn-light qs-link">C# &raquo;</a>
 </div>
 
 ## What types of messages can be sent or received?
